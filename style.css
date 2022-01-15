@@ -34,15 +34,29 @@ header{
     background-color: #e91e63;
     text-align: center;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.315);
-    
+}
+
+header > img {
+    min-height: 200px;
+    max-height: 358px;
 }
 
 nav {
     background-color: var(--cor3);
     text-align: center;
-    padding: 7px;
+    padding: 9px;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.315);
     
+}
+
+#home {
+    background-color: var(--cor6);
+    color: white;
+}
+
+nav > #home:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 nav > a {
@@ -78,13 +92,17 @@ body{
 
 .main2 {
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
     border-radius: 0px 0px 10px 10px;
+}
+
+.main2 > h2 {
+    text-align: center;
 }
 
 main {
@@ -139,6 +157,13 @@ aside > ul {
     font-size: 18px;
 }
 
+.lista {
+    text-align: center;
+}
+
+
+
+
 section{
     min-height: 100vh;
     padding: 2rem 0;
@@ -159,7 +184,7 @@ section{
     align-items: stretch;
 }
 
-.grid2{
+.linha2{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
@@ -167,50 +192,57 @@ section{
     align-items: stretch;
 }
 
-.grid3{
+.linha3{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     gap: 2rem;
     align-items: stretch;
 }
-.blog_card{
+
+.card{
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.315);
 }
-.blog_img{
+
+.card_img{
     height: 300px;
     border-radius: 30px;
     overflow: hidden;
 }
-.blog_img img{
+
+.card_img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-.blog_content{
+
+.card_img img:hover {
+    
+}
+
+.card_content{
     padding: 1.2rem;
 }
-.blog_content .row{
+
+.card_content .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: clamp(.7rem,4vw,1.1rem);
 }
-.blog_content .title{
+
+.card_content .title{
     margin: 2rem 0;
 }
-ion-icon{
-    color: #31326f;
-    vertical-align: middle;
-    font-size: 1.2rem;
-    margin-right: .5rem;
-}
-.blog_content .row .btn{
+
+
+
+.card_content .row .btn{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 400;
@@ -229,6 +261,10 @@ button:hover {
     color: white;
     transition-duration: 0.5s;
 }
+
+
+
+
 
 footer {
     background-color: black;
@@ -254,104 +290,5 @@ footer a:hover {
     text-decoration: underline;
     font-weight: bolder;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
-*/
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-
 
 
